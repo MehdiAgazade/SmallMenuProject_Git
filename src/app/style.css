@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+ 
+.header a {
+    color: white;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+.header a:hover {
+    scale: 1.03;
+    color: red;
+    text-shadow: 0 0 20px red;
+}
+
+.footer p {
+    font-size: 35px;
+}
+
+.home,
+.recipes {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 50px 0;
+}
+
+.not-found {
+    padding: 50px;
+    background-color: black;
+    font-size: 30px;
+}
+
+.not-found p {
+    margin-bottom: 20px;
+    color: red;
+}
+
+.not-found a {
+    color: white;
+    transition: 0.3s;
+}
+
+.not-found a:hover {
+    scale: 1.03;
+    color: red;
+    text-shadow: 0 0 20px red;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 20px;
+  gap: 10px;
+}
+
+.recipe {
+  border: 2px solid red;
+  background-color: black;
+  padding: 20px;
+  font-size: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.recipe:hover {
+  scale: 1.01;
+  box-shadow: 0 0 20px red;
+  border-radius: 10px;
+}
+
+.recipeLink {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  padding: 20px 25px;
+  inset: 0;
+  color: white;
+  transition: 0.3s
+}
+
+.recipeLink:hover {
+  color: red;
+}
+
+.recipe img {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.allRecipeInfos {
+    padding: 20px;
+}
+
+.recipeInfos {
+    display: flex;
+    border: 2px solid red;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    line-height: 35px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.allRecipeInfos img {
+    height: 600px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.allRecipeImage {
+    background-color: black;
+    border: 2px solid red;
+    padding: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
